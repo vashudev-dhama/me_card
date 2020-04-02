@@ -24,9 +24,62 @@ class MyApp extends StatelessWidget {
               Text(
                 'John Doe',
                 style: TextStyle(
+                  fontFamily: 'Pacifico',
                   color: Colors.white,
                   fontSize: 40.0,
                   fontWeight: FontWeight.bold,
+                ),
+              ),
+              Text(
+                'FLUTTER DEVELOPER',
+                style: TextStyle(
+                  color: Colors.teal.shade100,
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.bold,
+                  letterSpacing: 2.5,
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
+                padding: EdgeInsets.all(10.0),
+                color: Colors.white,
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.phone,
+                      color: Colors.teal,
+                    ),
+                    SizedBox(width: 15.0),
+                    Text(
+                      '+12 345 678 901',
+                      style: TextStyle(
+                        color: Colors.teal,
+                        fontSize: 20.0,
+                        //fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+                padding: EdgeInsets.all(10.0),
+                color: Colors.white,
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.email,
+                      color: Colors.teal,
+                    ),
+                    SizedBox(width: 15.0),
+                    Text(
+                      'johndoe@example.com',
+                      style: TextStyle(
+                        color: Colors.teal,
+                        fontSize: 20.0,
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ],
