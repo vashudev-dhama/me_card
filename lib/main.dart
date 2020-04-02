@@ -9,12 +9,13 @@ class MyApp extends StatelessWidget {
       title: 'Me Card',
       home: Scaffold(
         backgroundColor: Colors.teal,
-        appBar: AppBar(
-          backgroundColor: Colors.teal,
-          title: Text('AppBar title!'),
-        ),
+//        appBar: AppBar(
+//          backgroundColor: Colors.teal,
+//          title: Text('AppBar title!'),
+//        ),
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 45.0,
@@ -39,47 +40,45 @@ class MyApp extends StatelessWidget {
                   letterSpacing: 2.5,
                 ),
               ),
-              Container(
-                margin: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
-                padding: EdgeInsets.all(10.0),
-                color: Colors.white,
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.phone,
-                      color: Colors.teal,
-                    ),
-                    SizedBox(width: 15.0),
-                    Text(
-                      '+12 345 678 901',
-                      style: TextStyle(
-                        color: Colors.teal,
-                        fontSize: 20.0,
-                        //fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ],
+              SizedBox(
+                width: 150.0,
+                height: 20.0,
+                child: Divider(
+                  color: Colors.teal.shade100,
                 ),
               ),
-              Container(
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-                padding: EdgeInsets.all(10.0),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
                 color: Colors.white,
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.email,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '+12 345 678 901',
+                    style: TextStyle(
                       color: Colors.teal,
+                      fontSize: 20.0,
                     ),
-                    SizedBox(width: 15.0),
-                    Text(
-                      'johndoe@example.com',
-                      style: TextStyle(
-                        color: Colors.teal,
-                        fontSize: 20.0,
-                      ),
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+                color: Colors.white,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'johndoe@example.com',
+                    style: TextStyle(
+                      color: Colors.teal,
+                      fontSize: 20.0,
                     ),
-                  ],
+                  ),
                 ),
               ),
             ],
