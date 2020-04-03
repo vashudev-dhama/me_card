@@ -2,5 +2,5 @@
 
 ### Personal id app
 
-![Finished App](https://github.com/vashudev-dhama/images/me_card.jpg)
+![Finished App](https://github.com/vashudev-dhama/images/blob/master/me_card.jpg)
 
